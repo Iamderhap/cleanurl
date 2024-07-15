@@ -1,10 +1,12 @@
 import React from 'react';
 import samplerequest from "../assets/samplerequest.png"
+import Nav from './Nav';
 
 const Api = () => {
   return (
-      <div className=' flex flex-col justify-center items-center bg-black text-white gap-[20px]'>
-         {/* <Nav/> */}
+   <>
+         <Nav/>
+      <div className=' flex flex-col justify-center items-center bg-black text-white gap-[20px] w-full'>
               <h1 className='text-[30px] font-semibold'>API Documentation</h1>
               <div>
             <div className=' gap-[20px] flex flex-col max-sm:flex-col max-sm:items-center max-sm:justify-center'>
@@ -67,6 +69,7 @@ const Api = () => {
        </footer>
        
     </div>
+    </>
   )
 }
 

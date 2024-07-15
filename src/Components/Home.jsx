@@ -45,7 +45,7 @@ const Home = () => {
             <div>
                 <p><a href={Url} className='text-white'>{Url}</a></p>
             </div>
-                <button className='text-xl text-white border-2  border-blue-500 p-[20px] rounded-xl'>or use API</button>
+                <a className='text-xl text-white border-2  border-blue-500 p-[20px] rounded-xl' href='/api'>or use API</a>
             <div>
                 <p className='text-gray-400'>Copyright © 2024.</p>
             </div>
