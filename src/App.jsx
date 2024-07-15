@@ -1,6 +1,7 @@
 import Api from "./Components/Api"
 import {Route, BrowserRouter, Routes} from "react-router-dom"
 import ErrorPage from "./Components/Error"
+import Terms from './Components/Terms'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
 
         {/* Should be last route */}
         <Route path="*" element={<ErrorPage/>} />
+        <Route path ='/terms' element={<Terms/>}/>
       </Routes>
       </BrowserRouter>
     </>
