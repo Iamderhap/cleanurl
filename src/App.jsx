@@ -1,6 +1,7 @@
 import Api from "./Components/Api"
 import {Route, BrowserRouter, Routes} from "react-router-dom"
 import ErrorPage from "./Components/Error"
+import Report from "./Components/Report"
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         {/* <Route index element={<Home/>} /> */}
         <Route path="/api" element={<Api/>} />
+        <Route path="/report" element={<Report/>} />
 
 
 
