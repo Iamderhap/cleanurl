@@ -59,8 +59,13 @@ const Api = () => {
                 </div>
               </div>
           </div>
+
        </div>
-       {/* <Footer/> */}
+
+       <footer className='flex justify-center items-center w-full h-[50px]'>
+         <p>Copyright © 2024.</p>
+       </footer>
+       
     </div>
   )
 }
