@@ -1,6 +1,6 @@
 import React from 'react'
 
-const contact = () => {
+const Contact = () => {
   return (
     <div className='flex flex-col justify-center bg-black h-[100vh] text-white px-[40px] md:px-[200px] py-[24px]'>
       <h1 className='text-[40px] text-center'>Contact</h1>
@@ -43,10 +43,10 @@ const contact = () => {
       </form>
 
       <div className='w-[100%] py-[16px]'>
-        <p className='text-gray-300 text-center font-bold'>Copyright © 2018-2023.</p>
+        <p className='text-gray-300 text-center font-bold'>Copyright © 2024.</p>
       </div>
     </div>
   )
 }
 
-export default contact
+export default Contact
