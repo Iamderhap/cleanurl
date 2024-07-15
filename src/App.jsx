@@ -1,11 +1,23 @@
 import Api from "./Components/Api"
-import [Router, B]
+import {Route, BrowserRouter, Routes} from "react-router-dom"
+import ErrorPage from "./Components/Error"
+import Home from "./Components/Home"
 
 function App() {
   
   return (
     <>
-      <Api/>
+      <BrowserRouter>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route path="/api" element={<Api/>} />
+
+
+
+        {/* Should be last route */}
+        <Route path="*" element={<ErrorPage/>} />
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
