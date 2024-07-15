@@ -1,8 +1,11 @@
 import React from 'react'
+import Nav from './Nav'
 
 const Terms = () => {
   return (
-    <div className='bg-[#373131] text-white flex flex-col items-center gap-7 p-10 '>
+    <>
+    <Nav />
+    <div className='bg-[#000000] text-white flex flex-col items-center gap-7 p-10 '>
             <h1 className='text-5xl font-bold max-md:text-3xl'>Terms and Conditions</h1>
       <div className='flex flex-col gap-5'>
             <h1 className='text-4xl font-bold max-md:text-3xl'>Introduction</h1>
@@ -64,6 +67,7 @@ const Terms = () => {
       </div>
       <p className='text-[#afa8a8]'>Copyright © 2018-2023.</p>
     </div>
+    </>
   )
 }
 
