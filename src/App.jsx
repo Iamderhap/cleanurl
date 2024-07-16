@@ -19,7 +19,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/terms' element={<Terms />} />
 
-          {/* Should be last route */}
+         {/* Should be last route */}
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

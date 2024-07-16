@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Nav from './Nav'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     const [Url, setUrl] = useState(null)
@@ -8,6 +10,10 @@ const Home = () => {
 
     
     async function fetchApi(){
+
+        if(!input){
+            return toast.error("Url is required!");
+        }
         setIsclick(true)
    
     try{
@@ -38,6 +44,7 @@ const Home = () => {
   return (
     <>
         <Nav/>
+        <ToastContainer />
 
         <div className='flex flex-col items-center justify-center  w-[100%] h-[100vh] bg-black gap-8'>
         <div>
